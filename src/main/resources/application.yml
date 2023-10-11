@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: veganplanet-gateway
+  cloud:
+    nacos:
+      discovery:
+        namespace:
+        group: JAVA
+        server-addr: nacos.vegetarianlefty.com:8848
+      config:
+        file-extension: yaml
+        namespace:
+        group: JAVA
+        server-addr: nacos.vegetarianlefty.com:8848
+  config:
+    import:
+      - optional:nacos:veganplanet-gateway.yml
