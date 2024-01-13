@@ -5,12 +5,12 @@ spring:
   cloud:
     nacos:
       discovery:
-        namespace:
+        namespace: veganplanet
         group: JAVA
         server-addr: nacos.vegetarianlefty.com:8848
       config:
         file-extension: yaml
-        namespace:
+        namespace: veganplanet
         group: JAVA
         server-addr: nacos.vegetarianlefty.com:8848
   config:
