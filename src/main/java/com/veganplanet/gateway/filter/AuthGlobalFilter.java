@@ -74,7 +74,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         String token = request.getHeaders().getFirst("token");
         if (token != null) {
             //根据token从数据库获取用户信息
-            String userInfo = redisTemplate.opsForValue().get("user:veganplanet:" + token);;
+            String userInfo = redisTemplate.opsForValue().get("system:veganplanet:" + token);;
             if (userInfo != null) {
                 //将用户信息转换为对象
                 AuthUserInfo authUserInfo = JSONUtil.toBean(userInfo, AuthUserInfo.class);
