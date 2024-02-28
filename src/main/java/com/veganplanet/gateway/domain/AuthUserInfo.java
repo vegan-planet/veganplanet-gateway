@@ -1,6 +1,5 @@
 package com.veganplanet.gateway.domain;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 /**
@@ -13,13 +12,21 @@ public class AuthUserInfo {
     /**
      * 用户编号
      */
-    private Integer userNo;
+    private Long userNo;
     /**
-     * 用户姓名
+     *用户名
      */
     private String userName;
     /**
-     * 手机号
+     *手机号
      */
-    private String mobile;
+    private String phone;
+    /**
+     *头像
+     */
+    private String avatar;
+    /**
+     *昵称
+     */
+    private String nickName;
 }
